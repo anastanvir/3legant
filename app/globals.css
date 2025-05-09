@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Nuclear CSS override */
+:root,
+[data-theme='customBlack'] {
+  color-scheme: dark;
+
+  /* Base colors */
+  --color-primary: oklch(35% 0 0) !important;
+  --color-primary-content: oklch(100% 0 0) !important;
+  --color-secondary: oklch(35% 0 0) !important;
+  --color-secondary-content: oklch(100% 0 0) !important;
+  --color-accent: oklch(35% 0 0) !important;
+  --color-accent-content: oklch(100% 0 0) !important;
+  --color-neutral: oklch(35% 0 0) !important;
+  --color-neutral-content: oklch(100% 0 0) !important;
+  --color-base-100: oklch(0% 0 0) !important;
+  --color-base-200: oklch(19% 0 0) !important;
+  --color-base-300: oklch(22% 0 0) !important;
+  --color-base-content: oklch(87.609% 0 0) !important;
+
+  /* State colors */
+  --color-info: oklch(45.201% 0.313 264.052) !important;
+  --color-info-content: oklch(89.04% 0.062 264.052) !important;
+  --color-success: oklch(51.975% 0.176 142.495) !important;
+  --color-success-content: oklch(90.395% 0.035 142.495) !important;
+  --color-warning: oklch(96.798% 0.211 109.769) !important;
+  --color-warning-content: oklch(19.359% 0.042 109.769) !important;
+  --color-error: oklch(62.795% 0.257 29.233) !important;
+  --color-error-content: oklch(12.559% 0.051 29.233) !important;
+}
+
+
+body {
+  @apply bg-base-100 text-base-content;
+  background-color: oklch(0% 0 0) !important;
+}
+
+/* Your existing Swiper styles */
+.swiper-pagination-bullet {
+  background: oklch(97% 0 0);
+  opacity: 0.5;
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  background: oklch(97% 0 0);
+  opacity: 1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: oklch(97% 0 0);
+  padding: 0 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0.25rem;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
